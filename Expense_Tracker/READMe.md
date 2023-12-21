@@ -8,7 +8,7 @@
 * [Project Overview](#project-overview)
     * [Class Summary](#class-summary)
     * [Instructions](#instructions)
-    * [Solutions](#solutions)
+    * [Execution](#execution)
 * [Cloning Instructions](#cloning-instructions)
 * [Running the code](#running-the-code)
 
@@ -72,7 +72,7 @@ timestamp whenever an update occurs.
 3. Create a to_dict method that returns a list of dictionaries representing each expense in
 the database.
 
-## Solutions
+## Execution
 
 ### Expense class
 
@@ -166,7 +166,7 @@ This method retrieves a list of expenses by their title.
     def to_dict(self):
         return [expense.to_dict() for expense in self.expenses]
 ```
-The to_dict method was used to create a list of dictionaries where each dictionary represents the attributes of an expense in the database.
+The to_dict method creates a list of dictionaries where each dictionary represents the attributes of an expense in the database.
 
 # Cloning Instructions
 Below is a step by step guide on how to clone this project to your local computer:
@@ -177,7 +177,7 @@ Below is a step by step guide on how to clone this project to your local compute
 ```bash
 mkdir <directory>
 ```
-* In the terminal, navigate to the location in which you would like to store the repo. You can do so by typing the following command:
+* In the terminal, navigate to the location in which you would like to store the repo
 ```bash
 cd <directory>
 ```
@@ -188,7 +188,7 @@ git clone <repo-url>
 ```
 In this case:
 ```bash
-git clone https://github.com/Isioma57/Object-Oriented-Programming-in-Python.git
+git clone https://github.com/Isioma57/AltSchool-Africa-Projects.git
 ```
 * Give the process a few moments to complete. 
 * Check to make sure that the repository is on your local computer. To do so, navigate to the directory in which it was stored.
@@ -209,7 +209,7 @@ To execute the code using Git Bash or any terminal, follow these steps:
 ```
 python expense_tracker.py
 ```
-Note:
+#### Note:
 
 * Ensure that you are in the correct directory containing the script.
 
