@@ -8,15 +8,16 @@
 * [Project Overview](#project-overview)
     * [Class Summary](#class-summary)
     * [Instructions](#instructions)
-    * [Solutions](#solutions)
+    * [Execution](#execution)
 * [Cloning Instructions](#cloning-instructions)
 * [Running the code](#running-the-code)
 
 
 # Project Overview
-Expense Tracker is a Python application designed to help users or establishments in monitoring their day-to-day spendings. It offers a straightforward and user-friendly interface for recording and managing expenses.
 
-This project involves the implementation of two classes, Expense and ExpenseDatabase.It entails defining classes with relevant attributes and methods to represent real-world expense data, implementing data handling and manipulation techniques and working with time-related functionalities. Below is a preview of the class attributes and methods.
+This project focuses on implementing object-oriented programming concepts. It involves creating two main classes: Expense and ExpenseDatabase. These classes are designed to model and manage financial expenses. 
+
+The idea behind this project is to acquire practical knowledge by defining classes to represent real-world expense data, implementing data handling and manipulation techniques, and working with time-related functionalities. Below is a preview of the class attributes and methods.
 
 ## Class Summary
 ### Expense Class:
@@ -37,7 +38,7 @@ Represents an individual financial expense.
 
 
    
-### ExpenseDB class
+### ExpenseDatabase class
 
 Manages a collection of Expense objects.
 
@@ -72,7 +73,7 @@ timestamp whenever an update occurs.
 3. Create a to_dict method that returns a list of dictionaries representing each expense in
 the database.
 
-## Solutions
+## Execution
 
 ### Expense class
 
@@ -91,7 +92,7 @@ class Expense:
 ```
 This code sets up a basic expense tracking system with unique IDs, titles, amounts, and timestamps for creation and last update.
 
-The uuid is set to uuid4 because this version generates a random UUID, which has a very low chance of collision with other UUIDs. The ```self.updated_at``` matches the ```self.created_at``` because when an Expense object is first created, it has not been updated yet, so the ```updated_at timestamp``` is set to be the same as the ```created_at``` timestamp.
+The uuid is set to uuid4 because this version generates a random UUID, which has a very low chance of collision with other UUIDs. The ```self.updated_at``` matches the ```self.created_at``` because when an Expense object is first created, it has not been updated yet, so the ```updated_at``` timestamp is set to be the same as the ```created_at``` timestamp.
 
 #### **2. Implement an update method that allows updating the title and/or amount of the expense.** 
 ```python    
@@ -119,7 +120,7 @@ This method creates a dictionary with the key-value pairs. When you call the to_
 
 The creation and updated timestamp of the expense is in ISO 8601 format. ```The isoformat()``` method is used to convert the datetime object to a string in ISO format. This format provides a standardized and unambiguous way to represent dates and times.
 
-### ExpenseDataBase class
+### ExpenseDatabase class
 
 #### **1. Implement an __init__ method to initialize the expenses list.**
 ```python      
@@ -166,7 +167,7 @@ This method retrieves a list of expenses by their title.
     def to_dict(self):
         return [expense.to_dict() for expense in self.expenses]
 ```
-The to_dict method was used to create a list of dictionaries where each dictionary represents the attributes of an expense in the database.
+The to_dict method creates a list of dictionaries where each dictionary represents the attributes of an expense in the database.
 
 # Cloning Instructions
 Below is a step by step guide on how to clone this project to your local computer:
@@ -177,7 +178,7 @@ Below is a step by step guide on how to clone this project to your local compute
 ```bash
 mkdir <directory>
 ```
-* In the terminal, navigate to the location in which you would like to store the repo. You can do so by typing the following command:
+* In the terminal, navigate to the location in which you would like to store the repo
 ```bash
 cd <directory>
 ```
@@ -188,7 +189,7 @@ git clone <repo-url>
 ```
 In this case:
 ```bash
-git clone https://github.com/Isioma57/Object-Oriented-Programming-in-Python.git
+git clone https://github.com/Isioma57/AltSchool-Africa-Projects.git
 ```
 * Give the process a few moments to complete. 
 * Check to make sure that the repository is on your local computer. To do so, navigate to the directory in which it was stored.
@@ -209,7 +210,7 @@ To execute the code using Git Bash or any terminal, follow these steps:
 ```
 python expense_tracker.py
 ```
-Note:
+#### Note:
 
 * Ensure that you are in the correct directory containing the script.
 
